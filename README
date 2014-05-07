@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Plack-Middleware-LemonLDAP-BasicAuth,
-version 0.01:
+version 0.02:
 
   Middleware to provide LemonLDAP support for Plack applications
 

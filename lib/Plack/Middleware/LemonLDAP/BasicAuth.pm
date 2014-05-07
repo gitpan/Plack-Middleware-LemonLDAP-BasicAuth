@@ -13,7 +13,7 @@ use SOAP::Lite;
 
 use Plack::Util::Accessor qw(portal cookiename);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub prepare_app {
     my ($self) = shift;
@@ -67,6 +67,20 @@ sub _auth_lemonldap {
 
 1;
 
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Plack::Middleware::LemonLDAP::BasicAuth - Middleware to provide LemonLDAP support for Plack applications
+
+=head1 VERSION
+
+version 0.02
+
 =head1 DESCRIPTION
 
 LemonLDAP is a great tool to implement Single-Sign-On for webapplications.
@@ -86,3 +100,16 @@ it with L<Starman>.
 
 If no user is logged in, 
 
+=head1 AUTHOR
+
+Renee Bäcker <reneeb@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2014 by Renee Bäcker.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
+=cut
